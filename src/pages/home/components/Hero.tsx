@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="max-w-2xl">
           <span className="inline-flex items-center gap-2 bg-background-50/15 backdrop-blur border border-background-50/25 text-background-50 text-xs font-semibold uppercase tracking-[0.16em] px-4 py-2 rounded-full mb-6 animate-fade-up">
             <i className="ri-award-line"></i>
-            Trusted since 1984 — over 40 years
+            Trusted since 1994 — over 30 years
           </span>
 
           <h1 className="font-heading text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] text-background-50 animate-fade-up delay-100">
@@ -25,8 +25,8 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 text-base md:text-lg leading-relaxed text-background-100/90 max-w-xl animate-fade-up delay-200">
-            We match households with carefully vetted live-in and part-time helpers — whether it's a new worker's first
-            placement or an experienced transfer worker seeking a fresh start.
+            We match households with carefully vetted live-in helpers — whether it's a new worker's first
+            placement or an experienced transfer worker seeking a fresh start in Singapore.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-3 animate-fade-up delay-300">

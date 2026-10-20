@@ -8,10 +8,10 @@ export default function Services() {
         <SectionHeading
           eyebrow="What we offer"
           title="The right helper for every household"
-          description="From full-time live-in support to flexible part-time help, we place workers who genuinely fit your family — and support both new and transferring helpers along the way."
+          description="From full-time live-in support to new and transferring worker placements, we match you with helpers who genuinely fit your family — and support them every step of the way."
         />
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6">
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {services.map((service) => (
             <article
               key={service.id}

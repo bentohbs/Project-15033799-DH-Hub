@@ -41,7 +41,7 @@ export default function Footer() {
               <span className="font-heading text-xl font-semibold text-foreground-950">AC Global Manpower</span>
             </div>
             <p className="text-sm leading-relaxed text-foreground-700 mb-6">
-              Connecting households with reliable, carefully vetted domestic helpers for over 40 years. Warmth, trust,
+              Connecting households with reliable, carefully vetted domestic helpers for over 30 years. Warmth, trust,
               and care — in every placement.
             </p>
             <div className="flex items-center gap-3">
@@ -89,7 +89,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-accent-300/60 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-foreground-600 text-center sm:text-left">
-            © 2026 AC Global Manpower Domestic Services. Licence No. EA-40-1984. All rights reserved.
+            © 2026 AC Global Manpower Domestic Services. EA Lic No: 20C0288 · UEN: 53420682D. All rights reserved.
           </p>
           <div className="flex items-center gap-5">
             <a href="#contact" className="text-xs text-foreground-600 hover:text-foreground-950 cursor-pointer transition-colors">

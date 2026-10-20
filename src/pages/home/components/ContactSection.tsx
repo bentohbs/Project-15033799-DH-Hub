@@ -8,7 +8,7 @@ const contactDetails = [
   { icon: "ri-whatsapp-line", label: "WhatsApp", value: "+65 9665 1503", href: "https://wa.me/6596651503" },
   { icon: "ri-mail-line", label: "Email", value: "acglobalmanpower@gmail.com", href: "mailto:acglobalmanpower@gmail.com" },
   { icon: "ri-map-pin-2-line", label: "Visit us", value: "101 Upper Cross Street, #01-34 Peoples Park Centre, Singapore 058357", href: "#contact" },
-  { icon: "ri-time-line", label: "Office hours", value: "Mon – Sat, 9:00am – 6:00pm", href: "#contact" },
+  { icon: "ri-time-line", label: "Office hours", value: "Mon – Sat, 10:00am – 7:00pm", href: "#contact" },
 ];
 
 export default function ContactSection() {
@@ -168,7 +168,6 @@ export default function ContactSection() {
                         Select an option
                       </option>
                       <option value="Live-in">Live-in helper</option>
-                      <option value="Part-time / Daily">Part-time / daily help</option>
                       <option value="New Worker">New worker (first placement)</option>
                       <option value="Transfer Worker">Transfer worker (experienced)</option>
                       <option value="Not sure yet">Not sure yet — please advise</option>

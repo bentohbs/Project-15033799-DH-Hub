@@ -2,7 +2,7 @@ const pillars = [
   {
     icon: "ri-building-2-line",
     title: "Four decades of matching",
-    text: "Family-run since 1984, we've built our reputation one happy household at a time — and a generation of families now return to us.",
+    text: "Family-run since 1994, we've built our reputation one happy household at a time — and a generation of families now return to us.",
   },
   {
     icon: "ri-shield-user-line",
@@ -26,12 +26,12 @@ export default function Credibility() {
               <img
                 src="https://readdy.ai/api/search-image?query=Warm%20editorial%20lifestyle%20photo%20of%20a%20friendly%20Asian%20female%20domestic%20agency%20consultant%20having%20a%20welcoming%20chat%20with%20a%20happy%20Asian%20young%20family%20including%20parents%20and%20a%20child%2C%20sitting%20together%20in%20a%20bright%20cozy%20modern%20office%20with%20plants%20and%20art%20on%20the%20wall%2C%20soft%20natural%20morning%20light%2C%20terracotta%20and%20sage%20tones%2C%20warm%20harmonious%20atmosphere&width=900&height=1100&seq=about-team-asian-02&orientation=portrait"
                 alt="An AC Global Manpower consultant meeting with a family"
-                title="AC Global Manpower Domestic Services — over 40 years of trusted matching"
+                title="AC Global Manpower Domestic Services — over 30 years of trusted matching"
                 className="w-full h-full object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-5 -right-2 md:right-6 bg-accent-500 text-background-50 rounded-lg px-6 py-5">
-              <p className="font-heading text-4xl font-semibold leading-none">40+</p>
+              <p className="font-heading text-4xl font-semibold leading-none">30+</p>
               <p className="text-xs mt-1.5 tracking-wide">Years of caring</p>
             </div>
           </div>
@@ -42,10 +42,10 @@ export default function Credibility() {
               Why families choose us
             </span>
             <h2 className="font-heading text-2xl md:text-4xl font-semibold leading-tight tracking-tight text-foreground-950">
-              A trusted name in household care since 1984
+              A trusted name in household care since 1994
             </h2>
             <p className="mt-4 text-sm md:text-base leading-relaxed text-foreground-600">
-              Finding the right person to care for your home and family is a big decision. For over 40 years, we've made
+              Finding the right person to care for your home and family is a big decision. For over 30 years, we've made
               that decision easier by combining a personal touch with thorough, uncompromising vetting.
             </p>
 

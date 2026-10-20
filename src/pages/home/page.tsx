@@ -2,7 +2,6 @@ import Navbar from "@/components/feature/Navbar";
 import Footer from "@/components/feature/Footer";
 import WhatsAppButton from "@/components/feature/WhatsAppButton";
 import Hero from "./components/Hero";
-import TrustBar from "./components/TrustBar";
 import Credibility from "./components/Credibility";
 import Services from "./components/Services";
 import MatchingProcess from "./components/MatchingProcess";
@@ -17,7 +16,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <TrustBar />
         <Credibility />
         <Services />
         <MatchingProcess />

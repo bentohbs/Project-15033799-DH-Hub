@@ -1,13 +1,13 @@
 # AC Global Manpower
 
 ## 1. Project Description
-A trustworthy informational website for a domestic helper agency that has served households for over 40 years. Families looking for reliable live-in or part-time domestic helpers can browse helper profiles, read genuine reviews, learn how the matching process works, explore success stories for both new (first-time) and transfer helpers, and easily request a free consultation.
+A trustworthy informational website for a domestic helper agency that has served households for over 30 years (since 1994). Families looking for reliable live-in domestic helpers can browse helper profiles, read genuine reviews, learn how the matching process works, explore success stories for both new (first-time) and transfer helpers, and easily request a free consultation.
 
 - Target users: Households/families in need of reliable domestic helpers.
-- Core value: Credibility (40+ years), transparent helper profiles, honest reviews, a proven matching process, and an effortless way to reach out.
+- Core value: Credibility (30+ years, EA Lic No. 20C0288 / UEN 53420682D), transparent helper profiles, honest reviews, a proven matching process, and an effortless way to reach out.
 
 ## 2. Page Structure
-- `/` - Home (landing page: hero, trust signals, services, matching process, featured helper profiles, success stories, reviews, consultation form, footer)
+- `/` - Home (landing page: hero, credibility, services, matching process, featured helper profiles, success stories, reviews, consultation form, footer)
 
 All primary navigation uses in-page anchors on the landing page for now:
 - `#helpers`, `#process`, `#stories`, `#reviews`, `#contact`
@@ -18,7 +18,7 @@ Future phases may add dedicated pages:
 - `/contact` - Consultation page
 
 ## 3. Core Features
-- [x] Credibility section (40+ years, placements, satisfaction)
+- [x] Credibility section (30+ years, placements, satisfaction)
 - [x] Domestic helper matching process (step by step)
 - [x] Featured helper profiles with skills, experience, availability
 - [x] Success stories for new workers and transfer workers

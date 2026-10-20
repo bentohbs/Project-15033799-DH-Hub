@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const WHATSAPP_LINK = "https://wa.me/6596651503";
+const PHONE_LINK = "tel:+6565335448";
 
 const navLinks = [
   { label: "Home", href: "#top" },
@@ -67,13 +67,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-2 md:gap-3 shrink-0">
           <a
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Chat with us on WhatsApp"
-            className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-[#25D366] hover:bg-[#1EBE5B] text-white transition-colors cursor-pointer"
+            href={PHONE_LINK}
+            aria-label="Call us at +65 6533 5448"
+            title="Call +65 6533 5448"
+            className="w-10 h-10 md:w-11 md:h-11 flex items-center justify-center rounded-full bg-accent-500 hover:bg-accent-600 text-background-50 transition-colors cursor-pointer"
           >
-            <i className="ri-whatsapp-line text-lg md:text-xl"></i>
+            <i className="ri-phone-fill text-lg md:text-xl"></i>
           </a>
           <a
             href="#contact"
@@ -109,14 +108,12 @@ export default function Navbar() {
               </a>
             ))}
             <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={PHONE_LINK}
               onClick={() => setMenuOpen(false)}
-              className="mt-4 flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1EBE5B] text-white text-base font-semibold px-5 py-3 rounded-md whitespace-nowrap cursor-pointer transition-colors"
+              className="mt-4 flex items-center justify-center gap-2 bg-accent-500 hover:bg-accent-600 text-background-50 text-base font-semibold px-5 py-3 rounded-md whitespace-nowrap cursor-pointer transition-colors"
             >
-              <i className="ri-whatsapp-line text-lg"></i>
-              Chat on WhatsApp
+              <i className="ri-phone-fill text-lg"></i>
+              Call +65 6533 5448
             </a>
             <a
               href="#contact"
