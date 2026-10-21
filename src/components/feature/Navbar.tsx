@@ -32,7 +32,7 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <div className="flex items-center justify-between gap-3 px-4 md:px-6 h-16 md:h-20">
+      <div className="flex items-center justify-between gap-6 md:gap-10 px-4 md:px-8 lg:px-10 h-16 md:h-20">
         <a href="#top" className="flex items-center gap-2.5 shrink-0 cursor-pointer">
           <img
             src="https://static.readdy.ai/image/a1d3f700dd8475313919a1185348b467/5f5414dfde30c532f7efa1fdfe144c2d.jpeg"
@@ -49,7 +49,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        <nav className="hidden md:flex items-center gap-3 lg:gap-6">
+        <nav className="hidden md:flex items-center gap-5 lg:gap-9">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -65,7 +65,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-2 md:gap-3 shrink-0">
+        <div className="flex items-center gap-3 md:gap-5 shrink-0">
           <a
             href={PHONE_LINK}
             aria-label="Call us at +65 6533 5448"

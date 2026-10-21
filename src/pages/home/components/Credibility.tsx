@@ -1,7 +1,7 @@
 const pillars = [
   {
     icon: "ri-building-2-line",
-    title: "Four decades of matching",
+    title: "Over 30 years of matching",
     text: "Family-run since 1994, we've built our reputation one happy household at a time — and a generation of families now return to us.",
   },
   {

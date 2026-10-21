@@ -10,14 +10,18 @@ export default function HelperProfiles() {
               Our Helpers
             </span>
             <h2 className="font-heading text-3xl md:text-[2.6rem] font-semibold leading-[1.1] tracking-tight text-foreground-950">
-              Carefully screened helpers
+              Helpers from across Southeast Asia
             </h2>
+            <p className="mt-4 text-sm leading-relaxed text-foreground-600">
+              Different backgrounds, different strengths — the same thorough screening. Here's the kind of experience
+              our helpers typically bring to a household.
+            </p>
           </div>
           <a
             href="#contact"
             className="group inline-flex items-center gap-2 text-sm font-semibold text-primary-700 hover:text-primary-800 whitespace-nowrap cursor-pointer self-start sm:self-end transition-colors"
           >
-            View all helpers
+            Ask for real profiles
             <i className="ri-arrow-right-line transition-transform group-hover:translate-x-0.5"></i>
           </a>
         </div>
@@ -37,17 +41,30 @@ export default function HelperProfiles() {
                 />
               </div>
 
-              <div className="flex flex-col gap-2.5 p-4 md:p-5">
+              <div className="flex flex-col gap-3 p-4 md:p-5">
                 <span className="self-start inline-flex items-center rounded-full bg-accent-100 text-accent-800 text-[11px] md:text-xs font-semibold px-3 py-1">
                   {helper.nationality}
                 </span>
-                <p className="text-xs md:text-sm leading-relaxed text-foreground-800">
-                  {helper.description}
-                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {helper.skills.map((skill) => (
+                    <span
+                      key={skill}
+                      className="inline-flex items-center gap-1 rounded-md bg-secondary-100 text-secondary-900 text-[11px] md:text-xs font-medium px-2 py-1"
+                    >
+                      <i className="ri-check-line text-[11px]"></i>
+                      {skill}
+                    </span>
+                  ))}
+                </div>
               </div>
             </article>
           ))}
         </div>
+
+        <p className="mt-8 text-xs md:text-sm text-foreground-500 flex items-start gap-2">
+          <i className="ri-information-line mt-0.5 shrink-0"></i>
+          Illustrative images. Ask us for real helper profiles.
+        </p>
       </div>
     </section>
   );

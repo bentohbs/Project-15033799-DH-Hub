@@ -98,105 +98,54 @@ export default function ContactSection() {
             ) : (
               <form id="consultation-form" data-readdy-form onSubmit={handleSubmit} className="flex flex-col gap-5">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
+                  <div className="min-w-0">
                     <label htmlFor="name" className={labelClass}>
                       Full name
                     </label>
                     <input id="name" name="name" type="text" required placeholder="e.g. Jennifer Tan" className={inputClass} />
                   </div>
-                  <div>
-                    <label htmlFor="email" className={labelClass}>
-                      Email address
-                    </label>
-                    <input id="email" name="email" type="email" required placeholder="you@example.com" className={inputClass} />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="min-w-0">
                     <label htmlFor="phone" className={labelClass}>
                       Phone number
                     </label>
                     <input id="phone" name="phone" type="tel" required placeholder="+65 9123 4567" className={inputClass} />
                   </div>
-                  <div className="min-w-0">
-                    <label htmlFor="preferred_nationality" className={labelClass}>
-                      Preferred nationality
-                    </label>
-                    <select
-                      id="preferred_nationality"
-                      name="preferred_nationality"
-                      required
-                      defaultValue=""
-                      className={`${inputClass} cursor-pointer`}
-                    >
-                      <option value="" disabled>
-                        Select preferred nationality
-                      </option>
-                      <option value="Filipino">Filipino</option>
-                      <option value="Indonesian">Indonesian</option>
-                      <option value="Myanmar">Myanmar</option>
-                      <option value="Cambodian">Cambodian</option>
-                      <option value="Indian">Indian</option>
-                      <option value="No preference">No preference — please advise</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div>
-                  <label htmlFor="service_type" className={labelClass}>
-                    Type of services
-                  </label>
-                  <select id="service_type" name="service_type" required defaultValue="" className={`${inputClass} cursor-pointer`}>
-                    <option value="" disabled>
-                      Select type of services
-                    </option>
-                    <option value="Elderly care">Elderly care</option>
-                    <option value="Infant care">Infant care</option>
-                    <option value="General Housekeeping">General housekeeping</option>
-                    <option value="All of the above">All of the above</option>
-                  </select>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                   <div className="min-w-0">
-                    <label htmlFor="helper_type" className={labelClass}>
-                      What kind of helper are you looking for?
+                    <label htmlFor="email" className={labelClass}>
+                      Email address <span className="font-normal text-foreground-400">(optional)</span>
                     </label>
-                    <select id="helper_type" name="helper_type" required defaultValue="" className={`${inputClass} cursor-pointer`}>
-                      <option value="" disabled>
-                        Select an option
-                      </option>
-                      <option value="Live-in">Live-in helper</option>
-                      <option value="New Worker">New worker (first placement)</option>
-                      <option value="Transfer Worker">Transfer worker (experienced)</option>
-                      <option value="Not sure yet">Not sure yet — please advise</option>
-                    </select>
+                    <input id="email" name="email" type="email" placeholder="you@example.com" className={inputClass} />
                   </div>
                   <div className="min-w-0">
-                    <label htmlFor="timeline" className={labelClass}>
-                      Timeline
+                    <label htmlFor="service_type" className={labelClass}>
+                      Type of services
                     </label>
-                    <select id="timeline" name="timeline" required defaultValue="" className={`${inputClass} cursor-pointer`}>
+                    <select id="service_type" name="service_type" required defaultValue="" className={`${inputClass} cursor-pointer`}>
                       <option value="" disabled>
-                        Select your timeline
+                        Select type of services
                       </option>
-                      <option value="Urgent - (1-2) weeks">Urgent — (1-2) weeks</option>
-                      <option value="Not Urgent (4-8 weeks)">Not urgent — (4-8 weeks)</option>
+                      <option value="Elderly care">Elderly care</option>
+                      <option value="Infant care">Infant care</option>
+                      <option value="General Housekeeping">General housekeeping</option>
+                      <option value="Cooking">Cooking</option>
+                      <option value="All of the above">All of the above</option>
                     </select>
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="message" className={labelClass}>
-                    Tell us about your needs
+                    Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={4}
+                    rows={5}
                     maxLength={500}
-                    placeholder="Share your schedule, the type of support you need, and anything else that would help us match you well."
+                    placeholder="Share a little about your household, your schedule, and the help you're looking for."
                     className={`${inputClass} resize-none`}
                   ></textarea>
                 </div>
@@ -235,8 +184,8 @@ export default function ContactSection() {
                     </>
                   )}
                 </button>
-                <p className="text-xs text-foreground-500 text-center">
-                  We respect your privacy. Your details are only used to respond to your enquiry.
+                <p className="text-xs text-foreground-500 text-center leading-relaxed">
+                  By submitting, you agree to be contacted about your enquiry.
                 </p>
               </form>
             )}

@@ -1,18 +1,8 @@
 import SectionHeading from "@/components/base/SectionHeading";
-import { testimonials } from "@/mocks/testimonials";
 
-function Stars({ rating }: { rating: number }) {
-  return (
-    <div className="flex items-center gap-0.5">
-      {[1, 2, 3, 4, 5].map((n) => (
-        <i
-          key={n}
-          className={`${n <= rating ? "ri-star-fill text-primary-500" : "ri-star-line text-background-300"} text-sm`}
-        ></i>
-      ))}
-    </div>
-  );
-}
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/maps/search/?api=1&query=AC+Global+Manpower+Domestic+Services+101+Upper+Cross+Street+Peoples+Park+Centre+Singapore";
+const WHATSAPP_REVIEW_URL = "https://wa.me/6596651503";
 
 export default function Testimonials() {
   return (
@@ -20,51 +10,52 @@ export default function Testimonials() {
       <div className="px-4 md:px-8">
         <SectionHeading
           eyebrow="Reviews from families"
-          title="Loved by the households we serve"
-          description="Genuine feedback from families who found their helper through AC Global Manpower. Every review below comes from a completed placement."
+          title="What families say"
+          description="We'd rather you read real reviews than take our word for it. Our Google Business Profile holds the honest words of families we've placed helpers with — no editing, no cherry-picking."
         />
 
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10">
-          <div className="flex items-center gap-4 px-6 py-4 rounded-lg bg-background-50 border border-background-200/70">
-            <span className="font-heading text-4xl font-semibold text-foreground-950">4.9</span>
-            <div>
-              <Stars rating={5} />
-              <p className="text-xs text-foreground-500 mt-1">Based on 640+ reviews</p>
-            </div>
-          </div>
-          <div className="flex items-center gap-4 px-6 py-4 rounded-lg bg-background-50 border border-background-200/70">
-            <span className="w-11 h-11 flex items-center justify-center rounded-full bg-accent-100 text-accent-700">
-              <i className="ri-heart-3-line text-xl"></i>
+        <div className="mt-10 md:mt-12 max-w-3xl mx-auto rounded-lg bg-background-50 border border-background-200/70 p-7 md:p-10">
+          <div className="flex flex-col items-center text-center gap-6">
+            <span className="w-14 h-14 flex items-center justify-center rounded-full bg-background-100 text-foreground-900">
+              <i className="ri-google-fill text-3xl"></i>
             </span>
+
             <div>
-              <p className="font-heading text-xl font-semibold text-foreground-950">98%</p>
-              <p className="text-xs text-foreground-500">Would recommend us</p>
+              <p className="font-heading text-lg md:text-xl font-semibold text-foreground-950">
+                Read what other families have written
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-foreground-600 max-w-md mx-auto">
+                Every review is left by a household we've personally matched with a helper.
+              </p>
+            </div>
+
+            <a
+              href={GOOGLE_REVIEWS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 bg-background-50 hover:bg-background-100 border border-foreground-300/60 text-foreground-950 text-sm md:text-base font-semibold px-6 py-3.5 rounded-md whitespace-nowrap cursor-pointer transition-colors"
+            >
+              <i className="ri-google-fill text-primary-600"></i>
+              Read our reviews on Google
+              <i className="ri-arrow-right-up-line text-foreground-500"></i>
+            </a>
+
+            <div className="w-full border-t border-background-200/70 pt-6">
+              <p className="text-sm text-foreground-700 leading-relaxed">
+                Worked with us before? We'd love to hear how it went — share your experience with our team on{" "}
+                <a
+                  href={WHATSAPP_REVIEW_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 font-semibold text-accent-700 hover:text-accent-800 underline decoration-accent-300 underline-offset-2 cursor-pointer"
+                >
+                  WhatsApp
+                  <i className="ri-whatsapp-line"></i>
+                </a>
+                . Every note helps another family choose with confidence.
+              </p>
             </div>
           </div>
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-          {testimonials.map((review) => (
-            <article
-              key={review.id}
-              className="flex flex-col p-6 md:p-7 rounded-lg bg-background-50 border border-background-200/70"
-            >
-              <div className="flex items-center justify-between mb-4">
-                <Stars rating={review.rating} />
-                <span className="text-xs text-foreground-400">{review.date}</span>
-              </div>
-              <p className="text-sm leading-relaxed text-foreground-700 flex-1">"{review.text}"</p>
-              <div className="mt-5 pt-5 border-t border-background-200/70 flex items-center gap-3">
-                <span className="w-10 h-10 flex items-center justify-center rounded-full bg-primary-100 text-primary-700 font-heading font-semibold">
-                  {review.name.charAt(0)}
-                </span>
-                <div>
-                  <p className="text-sm font-semibold text-foreground-950">{review.name}</p>
-                  <p className="text-xs text-foreground-500">{review.location}</p>
-                </div>
-              </div>
-            </article>
-          ))}
         </div>
       </div>
     </section>
